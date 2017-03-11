@@ -1,0 +1,33 @@
+<template>
+    <div class="au-animate">
+        <!-- Header -->
+        <header>
+            <div class="container sub-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-text">
+                            <span class="skills">Hello job seeker! The following questions will be a self assessment of your job skills and work preferences.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+      	<!-- Register Form Section -->
+        <div id="formCarousel" class="carousel slide" data-ride="carousel">
+            <form name="profile" id="profileForm" novalidate>
+                <div class="carousel-inner" role="listbox">
+                    <section id="phase1" class="item active">
+                        <compose view="./form-components/profile-phase1.html"></compose>
+                    </section>
+                    <section id="phase2" class="item">
+                        <compose view="./form-components/profile-phase2.html"></compose>
+                    </section>
+                    <section id="phase3" class="item">
+                        <compose view="./form-components/profile-phase3.html"></compose>
+                    </section>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>

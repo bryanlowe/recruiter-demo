@@ -1,0 +1,9 @@
+<template>
+	<div repeat.for="let [key, value] of skillSet" id="jobExpFor-${key}" class="row">
+		<label>How many years have you used the skill: ${value}</label><br>
+		<select id="jobExpInput-${key}" class="form-control">
+			<option value="">Please Select</option>
+			<option repeat.for="level of skillLevelList" value="${level.value}">${level.name}</option>
+		</select>
+	</div>
+</template>

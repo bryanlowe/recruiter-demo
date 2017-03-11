@@ -1,0 +1,12 @@
+[id^="check-list-"] {
+	max-height: 200px;
+	overflow-y: scroll;
+}
+
+label {
+	min-width: 200px;
+}
+
+label.btn.btn-primary.active {
+	background-color: #18BC9C;
+}

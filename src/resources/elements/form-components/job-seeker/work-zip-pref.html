@@ -1,0 +1,7 @@
+<template>
+	<div if.bind="zip_min" class="row">
+		<label class="label-lg">Any particular zip code?</label><br>
+		<input type="number" id="work_zip_pref" name="work_zip_pref" min="${zip_min}" max="${zip_max}" class="form-control" />
+		<p>Zip range for this state is between ${zip_min} - ${zip_max}</p>
+	</div>
+</template>

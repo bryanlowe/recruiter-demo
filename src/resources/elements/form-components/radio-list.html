@@ -1,0 +1,8 @@
+<template>
+	<require from=".\radio-list.css"></require>
+	<div id="radio-list-${inputId}" class="btn-group-vertical" data-toggle="buttons">
+	  <label repeat.for="opt of options" for="${inputId}-${$index}" click.delegate="radioListClicked($event)" class="btn btn-primary">
+	    <input type="radio" name="${inputId}" id="${inputId}-${$index}" value="${opt.value ? opt.value : opt}"> ${opt.name ? opt.name : opt}
+	  </label>
+	</div>
+</template>
